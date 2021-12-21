@@ -22,7 +22,7 @@ function requestManager(method: HTTPMethod, endpoint: string, requestOptions: Ax
     ...requestOptions
   }
 
-  return axios.request(requestParams).then((response: AxiosResponse<any>) => {
+  return axios.request(requestParams).then((response: AxiosResponse<object>) => {
     return response.data
   })
 }
