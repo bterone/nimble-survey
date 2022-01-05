@@ -18,10 +18,7 @@ module.exports = {
   overrides: [
     {
       files: 'src/tests/**/*.test.ts',
-      extends: [
-        'plugin:jest/recommended',
-        'plugin:jest/style'
-      ]
+      extends: ['plugin:jest/recommended', 'plugin:jest/style']
     }
   ],
   parser: '@typescript-eslint/parser',
@@ -78,7 +75,7 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-use-before-define': ['error']
   },
   settings: {
     react: {
@@ -86,7 +83,7 @@ module.exports = {
     },
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx']
+        extensions: ['.ts', '.tsx', '.js']
       }
     }
   }
